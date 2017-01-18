@@ -2,6 +2,9 @@ title: Blog - ZK's site
 description: Kevin's Blog powered by Jekyll
 baseurl: /blog
 
+sass:
+  sass_dir: _sass
+
 # Build settings
 destination: ../mysite/public/blog
 markdown: kramdown
