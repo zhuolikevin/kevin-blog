@@ -1,0 +1,217 @@
+/* Fonts */
+@font-face {
+  font-family: "lato-regular";
+  src: url("/static/fonts/Lato-Regular.ttf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "ubuntu-regular";
+  src: url("/static/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "homemade-apple";
+  src: url("/static/fonts/HomemadeApple.ttf");
+}
+/* CSS Initialization */
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f5ead7;
+  font: 16px "lato-regular";
+}
+a {
+  text-decoration: none;
+}
+em {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  word-wrap: break-word;
+}
+input,
+textarea {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+/* 'flex' properties hack */
+.display-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.display-inline-flex {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+}
+.flex-one {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+.flex-direction-column {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.align-items-center {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+.justify-content-center {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.flex-direction-row {
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+.flex-direction-row-reverse {
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -o-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.user-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 0 30px;
+  z-index: 99;
+}
+#nav-bar .nav-left {
+  float: left;
+  height: 100%;
+}
+#nav-bar .nav-left ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  height: 100%;
+}
+#nav-bar .nav-left ul li {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+#nav-bar .nav-left ul li a {
+  color: #222;
+  text-decoration: none;
+}
+#nav-bar .nav-left ul li.active > a {
+  color: #5f91a0;
+}
+#nav-bar .nav-left ul li:hover a {
+  color: #5f91a0;
+}
+#nav-bar .nav-left ul li:hover:before {
+  -webkit-transform: scaleX(0.9);
+  -ms-transform: scaleX(0.9);
+  transform: scaleX(0.9);
+}
+#nav-bar .nav-left ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  border-bottom: 2px solid #5f91a0;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+}
+#source-description {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+#source-description a {
+  color: #000;
+  cursor: pointer;
+}
+#source-description a:hover {
+  color: #909090;
+}
