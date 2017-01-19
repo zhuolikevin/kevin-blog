@@ -62,15 +62,20 @@
   }
 }
 
-#source-description {
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  a {
-    color: #000;
-    cursor: pointer;
-    &:hover {
-      color: #909090;
+footer {
+  height: 59px;
+  #source-description {
+    float: right;
+    position: relative;
+    margin: 20px 30px;
+    bottom: 0;
+    right: 0;
+    a {
+      color: #000;
+      cursor: pointer;
+      &:hover {
+        color: #909090;
+      }
     }
   }
 }

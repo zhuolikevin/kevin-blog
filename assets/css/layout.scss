@@ -2,20 +2,30 @@
 ---
 @import "essentials";
 
-.layout-blog {
-  margin-top: 50px;
-  @include display-flex;
-  .layout-left {
-    transition: all .5s ease-in-out;
-    width: 300px;
-  }
-  .layout-right {
-    @include flex-one;
-    transition: all .5s ease-in-out;
-    background-color: #f3f3f3;
-    margin: 15px 15px 15px 10px;
-    padding: 10px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
+.layout-wrapper {
+  min-height: calc(100% - 59px);
+  margin-bottom: -59px;
+  padding-bottom: 59px;
+  .layout-blog {
+    margin-top: 50px;
+    @include display-flex;
+    .layout-left {
+      transition: all .5s ease-in-out;
+      width: 350px;
+      background-color: #f3f3f3;
+      margin: 15px 15px 15px 40px;
+      padding: 10px;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+    }
+    .layout-right {
+      @include flex-one;
+      transition: all .5s ease-in-out;
+      background-color: #f3f3f3;
+      margin: 15px 40px 15px 15px;
+      padding: 10px;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+    }
   }
 }

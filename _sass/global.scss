@@ -8,11 +8,15 @@ legend, input, textarea, select {
 ol, ul {
   margin: 0 !important;
 }
+html {
+  height: 100%;
+}
 body {
+  height: calc(100% - 50px);
   background: #f5ead7 !important;
   font: 16px "lato-regular" !important;
 }
-a { text-decoration: none; }
+a { text-decoration: none !important; }
 em { font-style: normal; }
 li { list-style: none; }
 img {
