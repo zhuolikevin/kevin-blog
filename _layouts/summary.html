@@ -2,6 +2,7 @@
 <title>All Posts - Blog - ZK's site</title>
 <link href="{{ site.baseurl }}/assets/main.css" type="text/css" rel="stylesheet" />
 <link href="{{ site.baseurl }}/assets/css/layout.css" type="text/css" rel="stylesheet" />
+<link href="{{ site.baseurl }}/assets/css/summary.css" type="text/css" rel="stylesheet" />
 
 <div class="layout-wrapper">
   <div class="layout-blog">
@@ -10,7 +11,15 @@
     </div>
 
     <div class="layout-right">
-      {{ content }}
+      <div class="content-title">All Posts</div>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            {{ post.date | date: "%Y-%m "}}&nbsp;>>&nbsp;
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </div>

@@ -11,10 +11,10 @@
     @include display-flex;
     .layout-left {
       transition: all .5s ease-in-out;
-      width: 350px;
+      width: 250px;
       background-color: #f3f3f3;
       margin: 15px 15px 15px 40px;
-      padding: 10px;
+      padding: 30px 50px;
       box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
       border-radius: 2px;
     }
@@ -23,7 +23,7 @@
       transition: all .5s ease-in-out;
       background-color: #f3f3f3;
       margin: 15px 40px 15px 15px;
-      padding: 10px;
+      padding: 30px 50px;
       box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
       border-radius: 2px;
     }

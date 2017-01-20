@@ -2,6 +2,7 @@
 <title>{{ page.title }} - Blog - ZK's site</title>
 <link href="{{ site.baseurl }}/assets/main.css" type="text/css" rel="stylesheet" />
 <link href="{{ site.baseurl }}/assets/css/layout.css" type="text/css" rel="stylesheet" />
+<link href="{{ site.baseurl }}/assets/css/post.css" type="text/css" rel="stylesheet" />
 
 <div class="layout-wrapper">
   <div class="layout-blog">
@@ -10,7 +11,18 @@
     </div>
 
     <div class="layout-right">
-      {{ content }}
+      <div class="post-title-block">
+        <div class="post-title">{{ page.title }}</div>
+        <div class="post-tags">
+          {% for tag in page.tags %}
+          <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="post-time">{{ page.date | date: "%Y-%m -%d" }}</div>
+      </div>
+      <div class="post-content">
+        {{ content }}
+      </div>
     </div>
   </div>
 </div>

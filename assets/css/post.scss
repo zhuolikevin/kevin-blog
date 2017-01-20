@@ -1,0 +1,30 @@
+---
+---
+.post-title-block {
+  margin-bottom: 20px;
+  clear: both;
+  overflow: hidden;
+  .post-title {
+    font-size: 32px;
+    padding: 15px 0;
+    border-bottom: 1px dashed;
+  }
+  .post-tags {
+    margin: 10px 0;
+    float: left;
+    span {
+      margin: 0 5px;
+      padding: 5px 10px;
+      background: #dadada;
+      border-radius: 5px;
+      font-size: 14px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .post-time {
+    margin: 10px 0;
+    float: right;
+  }
+}
