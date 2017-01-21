@@ -24,7 +24,8 @@ Add the following lines in `~/.tmux.conf`.
 unbind ^b
 set -g prefix 'C-a'
 # Add a new shortcut <prefix>r
-# which can dynamically reload the configuration file without killing Tmux server
+# which can dynamically reload the configuration file
+# without killing Tmux server
 bind r source-file ~/.tmux.conf \; display-message "Config reloaded"
 ```
 We will take <prefix> as a substitute of "Ctr + a" in the following texts.
