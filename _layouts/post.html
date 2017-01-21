@@ -18,10 +18,26 @@
           <span>{{ tag }}</span>
           {% endfor %}
         </div>
-        <div class="post-time">{{ page.date | date: "%Y-%m -%d" }}</div>
+        <div class="post-time">{{ page.date | date: "%b %d, %Y" }}</div>
       </div>
-      <div class="post-content">
+      <div class="post-content-block">
         {{ content }}
+      </div>
+      <div class="post-foot-block">
+        <div class="post-foot-previous">
+          {% if page.previous == nil %}
+            <span class="no-more">This is the first post</span>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ page.previous.url }}">Previous&nbsp;:&nbsp;{{ page.previous.title }}</a>
+          {% endif %}
+        </div>
+        <div class="post-foot-next">
+          {% if page.next == nil %}
+            <span class="no-more">This is the last post</span>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ page.next.url }}">Next&nbsp;:&nbsp;{{ page.next.title }}</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

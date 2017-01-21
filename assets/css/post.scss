@@ -1,7 +1,6 @@
 ---
 ---
 .post-title-block {
-  margin-bottom: 20px;
   clear: both;
   overflow: hidden;
   .post-title {
@@ -27,4 +26,25 @@
     margin: 10px 0;
     float: right;
   }
+}
+.post-content-block {
+  margin: 20px 0;
+}
+.post-foot-block {
+  clear: both;
+  overflow: hidden;
+  .post-foot-previous {
+    float: left;
+  }
+  .post-foot-next {
+    float: right;
+  }
+  a {
+    text-decoration: none;
+    color: #222;
+    &:hover {
+      color: #5f91a0;
+    }
+  }
+  .no-more { cursor: not-allowed; }
 }

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "前端面试知识点归纳 -- HTML"
-date:   2016-03-14 02:26:00 -0600
-tags: Techs WebFrontEnd 中文
+title: "前端面试知识点归纳 -- HTML"
+date: 2016-03-14 02:26:00 -0600
+tags: Techs FrontEnd 中文
 ---
 
 > 名词：`DOCTYPE`, `DTD`(Document Type Definition), `SGML`(Standard General Markup Language), `XML`(Extensible Markup Language), `HTML`/`XHTML`, `inline`/`block`, `HTML5`
