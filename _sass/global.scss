@@ -10,4 +10,23 @@ body {
   background: #f5ead7 !important;
   font-family: "hanyi-poem", "lato-regular" !important;
 }
+blockquote {
+  letter-spacing: 0 !important;
+  font-style: normal !important;
+}
+code {
+  margin: 0 2px !important;
+  padding: 0 5px !important;
+  background-color: #f9f9f9 !important;
+  font-family: "hanyi-poem", monospace !important;
+}
+pre {
+  background-color: #f5f2f0 !important;
+  border: 1px solid #ccc !important;
+  code {
+    background-color: #f5f2f0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
 #source-description a { text-decoration: none !important; }
