@@ -2,7 +2,7 @@
 layout: post
 title: "Tmux Simple Cheatsheet"
 date: 2016-07-13 11:27:00 +0800
-tags: Techs En
+tags: English Techs
 ---
 
 As the most popular terminal multiplexer, Tmux can highly speed up our daily works. Here I just provide some of the most commonly used commands which you will definately meet again and again.
