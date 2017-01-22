@@ -8,4 +8,31 @@
     border-radius: 5px;
     margin-bottom: 20px;
   }
+  .follow-block {
+    margin-bottom: 20px;
+    .follow-icons {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          font-size: 25px;
+          display: inline-block;
+          list-style: none;
+          padding-right: 5px;
+          a {
+            text-decoration: none;
+            color: #8c8c8c;
+            transition: all .3s ease-in-out;
+            &:hover {
+              &.icon-facebook { color: #3b5998; }
+              &.icon-twitter { color: #1da1f2; }
+              &.icon-linkedin { color: #1a85bc; }
+              &.icon-github { color: #333; }
+              &.icon-rss { color: #ec8232; }
+            }
+          }
+        }
+      }
+    }
+  }
 }

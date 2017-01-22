@@ -1,5 +1,6 @@
 title: Blog - ZK's site
-description: Kevin's Blog powered by Jekyll
+description: This is the blog of Kevin Li, which is powered by Jekyll.
+url: http://www.zhuolikevin.xyz/blog/
 baseurl: /blog
 
 sass:
