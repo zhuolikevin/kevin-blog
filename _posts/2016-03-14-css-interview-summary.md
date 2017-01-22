@@ -2,7 +2,8 @@
 layout: post
 title: "前端面试知识点归纳 -- CSS"
 date: 2016-03-14 21:56:00 -0600
-tags: 中文 Techs FrontEnd
+permalink: /:categories/:year/:month/:day/:title/
+tags: 中文 Techs Front-End
 ---
 
 > 名词: `盒子模型`(Box Model), `选择器`(Selector), `CSS3`, `CSS Hack`

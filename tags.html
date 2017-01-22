@@ -1,0 +1,26 @@
+---
+layout: summary
+permalink: /tags/
+---
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+  <div class="tag-posts" id="tag-{{ tag }}">
+    <div class="content-title">{{ tag }}</div>
+    <ul>
+      {% for post in site.tags[tag] %}
+        <li>
+          {{ post.date | date: "%Y-%m"}}&nbsp;>>&nbsp;
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+
+<script src="{{ site.baseurl }}/assets/js/tags.js"></script>

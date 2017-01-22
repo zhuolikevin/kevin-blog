@@ -2,7 +2,8 @@
 layout: post
 title: "前端面试知识点归纳 -- JavaScript"
 date: 2016-03-15 02:20:00 -0600
-tags: 中文 Techs FrontEnd
+permalink: /:categories/:year/:month/:day/:title/
+tags: 中文 Techs Front-End
 ---
 
 > 名词: `原型`(prototype), `事件`(event),`作用域`, `闭包`(closure), `JSON`, `AJAX`, `异步`, `ES6`, `DOM`

@@ -2,7 +2,8 @@
 layout: post
 title: "前端面试知识点归纳 -- Others"
 date: 2016-03-15 03:15:00 -0600
-tags: 中文 Techs FrontEnd
+permalink: /:categories/:year/:month/:day/:title/
+tags: 中文 Techs Front-End
 ---
 
 ## 浏览器相关

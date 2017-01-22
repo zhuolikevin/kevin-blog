@@ -1,4 +1,12 @@
 ---
 layout: summary
 ---
-{{ content }}
+<div class="content-title">All Posts</div>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      {{ post.date | date: "%Y-%m"}}&nbsp;>>&nbsp;
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

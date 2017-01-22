@@ -2,6 +2,7 @@
 layout: post
 title: "《驴得水》世界改变了我们"
 date: 2017-01-01 20:32:36 +0800
+permalink: /:categories/:year/:month/:day/:title/
 tags: 中文 Film
 ---
 > *“每个曾经特例独行的人，都抛弃了曾经的自己。”*

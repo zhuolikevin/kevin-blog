@@ -2,6 +2,7 @@
 layout: post
 title: "Tmux Simple Cheatsheet"
 date: 2016-07-13 11:27:00 +0800
+permalink: /:categories/:year/:month/:day/:title/
 tags: English Techs
 ---
 
