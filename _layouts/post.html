@@ -11,12 +11,19 @@
     </div>
 
     <div class="layout-right">
+      <div class="post-header-block">
+        <a href="{{ site.baseurl }}">Back to&nbsp;:&nbsp;All Posts</a>
+      </div>
       <div class="post-title-block">
         <div class="post-title">{{ page.title }}</div>
         <div class="post-tags">
-          {% for tag in page.tags %}
-          <span>{{ tag }}</span>
-          {% endfor %}
+          <ul>
+            {% for tag in page.tags %}
+              <li>
+                <a href="{{ site.baseurl }}/tags/?tag={{ tag }}">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
         <div class="post-time">{{ page.date | date: "%b %d, %Y" }}</div>
       </div>
