@@ -14,7 +14,7 @@ layout: summary
           {% endfor %}
         </div>
         <div class="post-excerpt">
-          {{ post.excerpt | strip_html }}
+          {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
           &nbsp;...&nbsp;
           <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
         </div>

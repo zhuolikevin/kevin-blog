@@ -35,14 +35,14 @@
           {% if page.previous == nil %}
             <span class="no-more">This is the first post</span>
           {% else %}
-            <a href="{{ site.baseurl }}{{ page.previous.url }}">Previous&nbsp;:&nbsp;{{ page.previous.title }}</a>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}">←&nbsp;Previous&nbsp;:&nbsp;{{ page.previous.title }}</a>
           {% endif %}
         </div>
         <div class="post-foot-next">
           {% if page.next == nil %}
             <span class="no-more">This is the last post</span>
           {% else %}
-            <a href="{{ site.baseurl }}{{ page.next.url }}">Next&nbsp;:&nbsp;{{ page.next.title }}</a>
+            <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}&nbsp;:&nbsp;Next&nbsp;→</a>
           {% endif %}
         </div>
       </div>

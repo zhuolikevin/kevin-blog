@@ -2,6 +2,10 @@
 layout: summary
 permalink: /tags/
 ---
+<div class="tags-header-block">
+  <a href="{{ site.baseurl }}">←&nbsp;Back to&nbsp;:&nbsp;All Posts</a>
+</div>
+
 {% capture tags %}
   {% for tag in site.tags %}
     {{ tag[0] }}
@@ -11,15 +15,27 @@ permalink: /tags/
 
 {% for tag in sortedtags %}
   <div class="tag-posts" id="tag-{{ tag }}">
-    <div class="content-title">{{ tag }}</div>
-    <ul>
-      {% for post in site.tags[tag] %}
-        <li>
-          {{ post.date | date: "%Y-%m"}}&nbsp;>>&nbsp;
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="content-title">Posts tagged with <span class="title-tagged">{{ tag }}</span></div>
+    <div class="post-list">
+      <ul>
+        {% for post in site.tags[tag] %}
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">{{ post.title }}</a>
+            <span class="date-tag">{{ post.date | date: "%Y-%m"}}</span>
+            <div class="post-tag-row">
+              {% for tag in post.tags %}
+                <a href="{{ site.baseurl }}/tags/?tag={{ tag }}" class="post-tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+            <div class="post-excerpt">
+              {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+              &nbsp;...&nbsp;
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 {% endfor %}
 
