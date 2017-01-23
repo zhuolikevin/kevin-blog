@@ -8,8 +8,9 @@ html {
 body {
   height: calc(100% - 50px);
   background: #f5ead7 !important;
-  font-family: "hanyi-poem", "lato-regular" !important;
+  font-family: "hanyi-poem", "ubuntu-regular" !important;
 }
+#nav-bar { font-family: "lato-regular" !important; }
 blockquote {
   letter-spacing: 0 !important;
   font-style: normal !important;

@@ -4,9 +4,10 @@ title: "前端面试知识点归纳 -- JavaScript"
 date: 2016-03-15 02:20:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
 tags: 中文 Techs Front-End
+excerpt: 很多时候，前端工程师又被称之为JavaScript工程师，虽然这种说法并不全面与准确，但足以说明JavaScript是前端体系中最为重要的一个环节。本篇博文总结了JavaScript语言相关的常见考点（其中不少在工作中会反复遇到），主要包括了：代码规范、数据类型、对象、原型继承、事件系统、常用关键字、闭包、跨域、ECMAScript等
 ---
 
-> 名词: `原型`(prototype), `事件`(event),`作用域`, `闭包`(closure), `JSON`, `AJAX`, `异步`, `ES6`, `DOM`
+> 很多时候，前端工程师又被称之为JavaScript工程师，虽然这种说法并不全面与准确，但足以说明JavaScript是前端体系中最为重要的一个环节。本篇博文总结了JavaScript语言相关的常见考点（其中不少在工作中会反复遇到），主要包括了：代码规范、数据类型、对象、原型继承、事件系统、常用关键字、闭包、跨域、ECMAScript等。
 
 1. JS基本数据类型
     - `Undefined`, `Null`, `Boolean`, `Number`, `String`, `Object`

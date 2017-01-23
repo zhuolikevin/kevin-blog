@@ -62,9 +62,7 @@
   a {
     text-decoration: none;
     color: #222;
-    &:hover {
-      color: #5f91a0;
-    }
+    &:hover { color: #5f91a0; }
   }
   .no-more { cursor: not-allowed; }
 }

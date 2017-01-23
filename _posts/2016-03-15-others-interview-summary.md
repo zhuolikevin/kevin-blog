@@ -4,11 +4,12 @@ title: "前端面试知识点归纳 -- Others"
 date: 2016-03-15 03:15:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
 tags: 中文 Techs Front-End
+excerpt: 作为前端面试知识点归纳系列的最后一篇，这里主要列举了一些零散的知识点。这部分的知识虽然零散，但是前端体系全面性的重要组成部分，也是前端岗位面试中非常常见的问题。主要包括：浏览器知识、网络知识与网络安全、性能优化与前端模块化/工程化、常见前端框架知识等
 ---
 
-## 浏览器相关
+> 作为前端面试知识点归纳系列的最后一篇，这里主要列举了一些零散的知识点。这部分的知识虽然零散，但是前端体系全面性的重要组成部分，也是前端岗位面试中非常常见的问题。主要包括：浏览器知识、网络知识与网络安全、性能优化与前端模块化/工程化、常见前端框架知识等。
 
-> 名词：`DOCTYPE`, `cookie`, `标准模式`/`兼容模式`(Standards Mode/Quirks Mode), `浏览器内核`
+## 浏览器
 
 1. 比较`cookie`/`sessionStorage`/`localStorage`
     - cookie 不超过4k，storage可以大于5M
@@ -53,19 +54,6 @@ tags: 中文 Techs Front-End
 
     > 详见 [了解HTML页面的渲染过程](http://www.cnblogs.com/yuezk/archive/2013/01/11/2855698.html)
 
-## 其他
-
-1. 网页验证码作用，为了解决的安全问题
-    - 区分用户是计算机还是人的公共全自动程序。可以防止：恶意破解密码、刷票、论坛灌水；
-<br><br>
-1. CDN（数据分发网络
-    - 最关键的部分是`智能调配DNS`：
-        - 用户在访问网站时`智能调配DNS`会帮助localDNS，通过一些算法（静态拓扑等）计算出最合适的CDN节点的IP返回给用户
-        - 还需要与各地CDN节点通信，跟踪各节点健康状态与容量
-    - 缓存功能：负载均衡，内容Cache服务器，共享存储等。
-
-    > 详见 **运维之道**：[web网站加速之CDN技术原理](http://www.51know.info/system_performance/cdn/cdn.html)
-
 1. 谈谈你知道的各浏览器存在的兼容性问题
     - CSS兼容性（部分）
         - 不同浏览器，同样的标签在不加样式的情况下，各自的`margin`和`padding`差异较大。【解决方案】```*{margin:0;padding:0;}```
@@ -77,38 +65,19 @@ tags: 中文 Techs Front-End
     - 其他（比如事件机制）
         - 触发事件的元素被认为是目标（target）。而在 IE 中，目标包含在 event 对象的 srcElement 属性
         - IE只有冒泡，而其他可以冒泡可以捕获
-<br><br>
-1. **前端优化**
-    - 加载优化
-        - DIV+CSS布局，不使用Table布局（代码臃肿，全部内容加载完才渲染）
-        - Gzip技术网页压缩
-        - CDN加速
-        - CSS/JS文件合并（减少HTTP request次数，即减少三次握手）及压缩
-        - 图片压缩，**CSS Image Sprites**
-        - 用`link`放Stylesheets在HTML页面头部，先加载完样式表才会渲染，放在后面会页面长时间空白
-        - CSS缩写，比如`color`写成三位，`margin`/`border`等，提取重复等减少代码量
-        - 延迟/异步加载JS
-        - 延迟请求首屏外内容，滚动页面再load下面的，lazyload
-    - 性能优化
-        - CSS性能优化
-            - 合理使用选择器，如后代选择器非常耗时
-            - 避免使用CSS Expression，触发会很频繁，很耗时
-        - JS性能优化
-            - 管理作用域，使用局部变量
-              - 局部变量访问更快
-              - 防止全局变量污染
-            - 数据操作
-              - 缓存频繁使用的对象/数组/属性：比如循环时`array.length`
-              - 不直接操作NodeList，将其转换成静态数组后再使用
-            - DOM操作
-              - 使用`DocumentFragment`
-            - 流控制
-              - `if`语句中，将经常发生的放在靠上的位置，提前返回
-            - 小心使用闭包：使用完后需要及时释放空间，否则可能内存泄露
-            - 数值转字符串用`''+`比`.toString()`快
-            - 避免使用`with`语句
 
-    > 参考 [前端工程优化：javascript的优化小结](http://www.cnblogs.com/coco1s/p/3946435.html) 与 [Web前端优化最佳实践及工具集锦](http://www.csdn.net/article/2013-09-23/2817020-web-performance-optimization)
+## 网络与安全
+
+1. 网页验证码作用，为了解决的安全问题
+    - 区分用户是计算机还是人的公共全自动程序。可以防止：恶意破解密码、刷票、论坛灌水；
+<br><br>
+1. CDN（数据分发网络
+    - 最关键的部分是`智能调配DNS`：
+        - 用户在访问网站时`智能调配DNS`会帮助localDNS，通过一些算法（静态拓扑等）计算出最合适的CDN节点的IP返回给用户
+        - 还需要与各地CDN节点通信，跟踪各节点健康状态与容量
+    - 缓存功能：负载均衡，内容Cache服务器，共享存储等。
+
+    > 详见 **运维之道**：[web网站加速之CDN技术原理](http://www.51know.info/system_performance/cdn/cdn.html)
 
 1. 常见的Web攻击手段与防护
     - XSS(Cross Site Scripting)跨站脚本攻击
@@ -133,14 +102,6 @@ tags: 中文 Techs Front-End
         - **文件名攻击**，文件名包含脚本，从而造成攻击
         - **文件后缀攻击**，上传的文件的后缀可能是exe可执行程序，js脚本等文件，这些程序可能被执行于受害者的客户端，甚至可能执行于服务器上。因此我们必须过滤文件名后缀,排除那些不被许可的文件名后缀
 <br><br>
-1. 前端模块化
-    - 实现特定功能相互独立的方法。【由来】随着网站的发展，JS文件越来越大，模块化利于分工协作、管理与测试等
-    - `CommonJS`：主要用于服务器端模块化规范，同步，`require`加载模块，`exports`返回对象
-    - `AMD`：非同步加载，允许指定回调函数。【核心思想】Early Executing
-    - `RequireJS` - AMD 和`SeaJS` - CMD
-
-    > 详见 **imWeb前端社区**：[浅谈前端模块化](http://imweb.io/topic/55994b358555272639cb031b)
-
 1. 常见HTTP状态码
     - 100 Continue   继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息
     - 200  OK         正常返回信息
@@ -202,7 +163,49 @@ tags: 中文 Techs Front-End
         - 502——网关错误
         - 503——由于超载或停机维护，服务器目前无法使用，一段时间后可能恢复正常
 
-## 框架知识点
+## 工程化与性能优化
+
+1. **前端优化**
+    - 加载优化
+        - DIV+CSS布局，不使用Table布局（代码臃肿，全部内容加载完才渲染）
+        - Gzip技术网页压缩
+        - CDN加速
+        - CSS/JS文件合并（减少HTTP request次数，即减少三次握手）及压缩
+        - 图片压缩，**CSS Image Sprites**
+        - 用`link`放Stylesheets在HTML页面头部，先加载完样式表才会渲染，放在后面会页面长时间空白
+        - CSS缩写，比如`color`写成三位，`margin`/`border`等，提取重复等减少代码量
+        - 延迟/异步加载JS
+        - 延迟请求首屏外内容，滚动页面再load下面的，lazyload
+    - 性能优化
+        - CSS性能优化
+            - 合理使用选择器，如后代选择器非常耗时
+            - 避免使用CSS Expression，触发会很频繁，很耗时
+        - JS性能优化
+            - 管理作用域，使用局部变量
+              - 局部变量访问更快
+              - 防止全局变量污染
+            - 数据操作
+              - 缓存频繁使用的对象/数组/属性：比如循环时`array.length`
+              - 不直接操作NodeList，将其转换成静态数组后再使用
+            - DOM操作
+              - 使用`DocumentFragment`
+            - 流控制
+              - `if`语句中，将经常发生的放在靠上的位置，提前返回
+            - 小心使用闭包：使用完后需要及时释放空间，否则可能内存泄露
+            - 数值转字符串用`''+`比`.toString()`快
+            - 避免使用`with`语句
+
+    > 参考 [前端工程优化：javascript的优化小结](http://www.cnblogs.com/coco1s/p/3946435.html) 与 [Web前端优化最佳实践及工具集锦](http://www.csdn.net/article/2013-09-23/2817020-web-performance-optimization)
+
+1. 前端模块化
+    - 实现特定功能相互独立的方法。【由来】随着网站的发展，JS文件越来越大，模块化利于分工协作、管理与测试等
+    - `CommonJS`：主要用于服务器端模块化规范，同步，`require`加载模块，`exports`返回对象
+    - `AMD`：非同步加载，允许指定回调函数。【核心思想】Early Executing
+    - `RequireJS` - AMD 和`SeaJS` - CMD
+
+    > 详见 **imWeb前端社区**：[浅谈前端模块化](http://imweb.io/topic/55994b358555272639cb031b)
+
+## 前端框架
 
 1. **React.js**
     - `virtual DOM`：轻量、无状态、不可改变的DOM虚拟表示，使用`JSX`时会自动创建
