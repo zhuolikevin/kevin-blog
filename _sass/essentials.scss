@@ -20,11 +20,6 @@
   unicode-range: U+00-024F;
   src: url("../fonts/Bariol_Regular.otf");
 }
-@font-face {
-  font-family: "hanyi-poem";
-  unicode-range: U+4E00-9FFF;
-  src: url("../fonts/Hanyi-Poem.ttf");
-}
 
 /* 'flex' properties hack */
 @mixin display-flex {

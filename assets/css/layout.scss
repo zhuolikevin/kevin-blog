@@ -10,6 +10,7 @@
     margin-top: 50px;
     @include display-flex;
     .layout-left {
+      position: relative;
       transition: all .5s ease-in-out;
       box-sizing: border-box;
       width: 300px;
@@ -19,6 +20,28 @@
       padding: 30px;
       box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
       border-radius: 2px;
+      overflow: hidden;
+      .collapse-bar {
+        @include display-flex;
+        @include align-items-center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: #d8d8d8;
+        width: 16px;
+        &-front {
+          cursor: pointer;
+          color: #222;
+          transition: all .3s ease-in-out;
+          width: 100%;
+          text-align: center;
+          background: #bdbdbd;
+          line-height: 40px;
+          height: 40px;
+          &:hover { background: #b3b3b3; }
+        }
+      }
     }
     .layout-right {
       @include flex-one;

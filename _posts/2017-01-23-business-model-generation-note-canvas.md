@@ -3,7 +3,7 @@ layout: post
 title: "Notes for Business Model Generation - Canvas"
 date: 2017-01-23 11:27:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
-tags: English Entrepreneurship
+tags: English Entrepreneurship Note
 excerpt: This series of posts is my own learning notes for the book *Business Model Generation*. Here is for Chapter One - Canvas. With nine blocks, the canvas covers the four main areas of a business -  **customers**, **offer**, **infrastructure**, and **financial viability**
 ---
 
