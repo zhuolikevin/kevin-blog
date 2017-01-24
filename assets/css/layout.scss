@@ -26,10 +26,14 @@
         @include align-items-center;
         position: absolute;
         top: 0;
-        right: 0;
+        right: -16px;
         height: 100%;
-        background: #d8d8d8;
         width: 16px;
+        background: #d8d8d8;
+        background: -webkit-linear-gradient(left, #eee, #d8d8d8);
+        background: -o-linear-gradient(right, #eee, #d8d8d8);
+        background: -moz-linear-gradient(right, #eee, #d8d8d8);
+        background: linear-gradient(to right, #eee , #d8d8d8);
         &-front {
           cursor: pointer;
           color: #222;
@@ -39,6 +43,7 @@
           background: #bdbdbd;
           line-height: 40px;
           height: 40px;
+          opacity: 0.6;
           &:hover { background: #b3b3b3; }
         }
       }
