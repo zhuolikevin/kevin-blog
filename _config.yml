@@ -6,12 +6,16 @@ baseurl: /blog
 sass:
   sass_dir: _sass
 
+paginate: 5
+paginate_path: /page:num/
+
 # Build settings
 destination: ../mysite/public/blog
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock

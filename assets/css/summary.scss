@@ -81,3 +81,25 @@
     }
   }
 }
+.pagination {
+  text-align: center;
+  &-btn {
+    padding: 0 10px;
+    text-decoration: none !important;
+    color: #222 !important;
+    transition: all .3s ease-in-out;
+    &:first-child { border-right: 1px solid #cacaca; }
+    &:nth-child(2) { border-right: 1px solid #cacaca; }
+    &:nth-last-child(2) { border-left: 1px solid #cacaca; }
+    &:nth-last-child(1) { border-left: 1px solid #cacaca; }
+    &:hover { color: #5f91a0 !important; }
+    &.forbidden {
+      cursor: not-allowed;
+      color: #cacaca !important;
+      &:hover { color: #cacaca !important; }
+    }
+  }
+  &-number {
+    padding: 0 10px;
+  }
+}

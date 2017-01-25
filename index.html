@@ -4,7 +4,7 @@ layout: summary
 <div class="content-title">All Posts</div>
 <div class="post-list">
   <ul>
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">{{ post.title }}</a>
         <span class="date-tag">{{ post.date | date: "%Y-%m"}}</span>
@@ -21,4 +21,35 @@ layout: summary
       </li>
     {% endfor %}
   </ul>
+</div>
+<div class="pagination">
+  {% if paginator.page != 1 %}
+    <a href="{{ site.baseurl }}" class="pagination-btn">First Page</a>
+  {% else %}
+    <a href="javascript:void(0)" class="pagination-btn forbidden">First Page</a>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="{{ site.baseurl }}" class="pagination-btn">Previous</a>
+    {% else %}
+      <a href="{{ sitebase.url }}/page{{ paginator.previous_page }}/" class="pagination-btn">Previous</a>
+    {% endif %}
+  {% else %}
+    <a href="javascript:void(0)" class="pagination-btn forbidden">Previous</a>
+  {% endif %}
+
+  <span class="pagination-number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/page{{ paginator.next_page }}/" class="pagination-btn">Next</a>
+  {% else %}
+    <a href="javascript:void(0)" class="pagination-btn forbidden">Next</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/" class="pagination-btn">Last Page</a>
+  {% else %}
+    <a href="javascript:void(0)" class="pagination-btn forbidden">Last Page</a>
+  {% endif %}
 </div>
