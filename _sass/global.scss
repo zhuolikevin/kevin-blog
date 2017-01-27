@@ -30,4 +30,16 @@ pre {
     padding: 0 !important;
   }
 }
+table {
+  border-collapse: collapse;
+  thead { border-bottom: 2px solid #c1c1c1; }
+  tr {
+    border-bottom: 1px solid #ddd;
+    &:last-child { border-bottom: none; }
+  }
+  th, td {
+    padding: 5px 10px;
+    vertical-align: initial;
+  }
+}
 #source-description a { text-decoration: none !important; }
