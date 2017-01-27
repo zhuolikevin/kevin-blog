@@ -17,9 +17,11 @@ blockquote {
 }
 code {
   margin: 0 2px !important;
-  padding: 0 5px !important;
+  padding: 2 5px !important;
   background-color: #f9f9f9 !important;
   font-family: monospace !important;
+  font-size: 90% !important;
+  vertical-align: text-bottom !important;
 }
 pre {
   background-color: #f5f2f0 !important;
