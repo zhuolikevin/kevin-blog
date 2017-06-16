@@ -3,7 +3,7 @@ layout: post
 title: "Get Started with AWS DynamoDB in Node.js"
 date: 2017-06-13 13:10:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
-tags: English Techs Note
+tags: English Techs Tutorial
 excerpt: Amazon DynamoDB is a fast and flexible NoSQL Database service integrated in AWS. This post works as a tutorial to get yourself ready for developing an application in NodeJS with data hosted in DynamoDB
 ---
 
