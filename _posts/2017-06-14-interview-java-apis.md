@@ -7,6 +7,15 @@ tags: English Techs Note
 excerpt: This is a note for collection of Java APIs that may be useful in coding interviews.
 ---
 
+1. Math
+
+    - `Math.max(a, b)`
+    - `Math.min(a, b)`
+
+1. `Array`
+
+    - Sorting: `Array.sort(arr)`
+
 1. `String`
 
     - `toCharArray()`
