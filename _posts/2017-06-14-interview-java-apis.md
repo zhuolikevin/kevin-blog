@@ -16,6 +16,14 @@ excerpt: This is a note for collection of Java APIs that may be useful in coding
 
     - Sorting: `Array.sort(arr)`
 
+    - `ArrayList<String>` to `String[]`
+
+        ```java
+ArrayList<String> list = new ArrayList<>();
+// ...
+String[] arr = list.toArray(new String[list.size()]);
+        ```
+
 1. `String`
 
     - `toCharArray()`
