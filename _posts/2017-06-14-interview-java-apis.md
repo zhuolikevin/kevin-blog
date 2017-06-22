@@ -12,6 +12,10 @@ excerpt: This is a note for collection of Java APIs that may be useful in coding
     - `Math.max(a, b)`
     - `Math.min(a, b)`
 
+1. Bit manipulation
+
+    - Count binary 1s of an integer: `Integer.bitCount(int)`
+
 1. `Array`
 
     - Sorting: `Array.sort(arr)`
