@@ -65,3 +65,10 @@ HashSet set = new HashSet(Arrays.asList(elements));
         ```
 
         But this may cause extra `n` space because we create another array.
+
+1. Conversions
+
+    - `Character` to `Integer`: `Character.getNumericValue(char)`
+    - `String` to `Integer`: `Integer.parseInt(String)`
+    - `Integer` to `String`: `String.valueOf(int)`
+    - `Character` to `String`: `String.valueof(char)`
