@@ -55,6 +55,9 @@ public String reverseWords(String s) {
 }
         ```
 
+        - Using `StringBuilder` is faster than "string plus" (e.g. `res = res + "b";`);
+        - `StringBuilder` is faster than `StringBuffer` because `StringBuffer` is sychronized which is thread safe (thus more comlicated and slower as well). 
+
 1. `HashSet`
 
     - Initialization with pre-defined elements
