@@ -3,7 +3,7 @@ layout: post
 title: "前端面试知识点归纳 -- Others"
 date: 2016-03-15 03:15:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
-tags: 中文 Techs Front-End
+tags: 中文 Techs Front-End Interview
 excerpt: 作为前端面试知识点归纳系列的最后一篇，这里主要列举了一些零散的知识点。这部分的知识虽然零散，但是前端体系全面性的重要组成部分，也是前端岗位面试中非常常见的问题。主要包括：浏览器知识、网络知识与网络安全、性能优化与前端模块化/工程化、常见前端框架知识等
 ---
 

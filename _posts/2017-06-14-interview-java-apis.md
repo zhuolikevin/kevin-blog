@@ -3,7 +3,7 @@ layout: post
 title: "Interview Java APIs"
 date: 2017-06-14 14:10:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
-tags: English Techs Note
+tags: English Techs Note Interview
 excerpt: This is a note for collection of Java APIs that may be useful in coding interviews.
 ---
 
@@ -56,7 +56,7 @@ public String reverseWords(String s) {
         ```
 
         - Using `StringBuilder` is faster than "string plus" (e.g. `res = res + "b";`);
-        - `StringBuilder` is faster than `StringBuffer` because `StringBuffer` is sychronized which is thread safe (thus more comlicated and slower as well). 
+        - `StringBuilder` is faster than `StringBuffer` because `StringBuffer` is sychronized which is thread safe (thus more comlicated and slower as well).
 
 1. `HashSet`
 
@@ -75,3 +75,4 @@ HashSet set = new HashSet(Arrays.asList(elements));
     - `String` to `Integer`: `Integer.parseInt(String)`
     - `Integer` to `String`: `String.valueOf(int)`
     - `Character` to `String`: `String.valueof(char)`
+    - `Integer` to `Character`: `Character.forDigit(int, 10)` or `(char)(int + '0')`

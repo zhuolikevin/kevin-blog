@@ -3,7 +3,7 @@ layout: post
 title: "前端面试知识点归纳 -- CSS"
 date: 2016-03-14 21:56:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
-tags: 中文 Techs Front-End
+tags: 中文 Techs Front-End Interview
 excerpt: 如果我们浏览网页只是浏览其中的文字内容，没有任何色彩排版与样式，这样的网站自然会跟人一种 “Ctr / Cmd + W” 的冲动。就像传统的纸质媒体如报纸、杂志，如果没有一个“美编”，层级标题横七竖八、字体字号自由发挥、图片大小随性而为堆积起来的文章自然也就不会有多少销量了(if not none :P)。本篇我们归纳了常见了CSS相关的知识点，而不少具体样式的写法多为经验规律，更多的使用才是掌握的关键
 ---
 

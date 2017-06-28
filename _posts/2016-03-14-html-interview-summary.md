@@ -3,7 +3,7 @@ layout: post
 title: "前端面试知识点归纳 -- HTML"
 date: 2016-03-14 02:26:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
-tags: 中文 Techs Front-End
+tags: 中文 Techs Front-End Interview
 excerpt: 前端就是和浏览器打交道，而浏览器出现的本质（抛开JavaScript引入的丰富的交互）是对文本的展现（渲染），文本的结构又正是由HTML构成的，可以说HTML是前端的最初雏形与根本骨架。随着HTML5的出现，原本的标记语言也被赋予了更多值得玩味的有趣points。本篇博文主要归纳了前端面试中HTML语义、规范、标签的应用与HTML5常见新特性
 ---
 
