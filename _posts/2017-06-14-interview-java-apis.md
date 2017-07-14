@@ -69,6 +69,10 @@ HashSet set = new HashSet(Arrays.asList(elements));
 
         But this may cause extra `n` space because we create another array.
 
+1. `HashMap` & `HashTable`
+
+    - `HashTable` is thread safe (like `StringBuffer`), so `HashMap` is faster.
+
 1. Conversions
 
     - `Character` to `Integer`: `Character.getNumericValue(char)`
