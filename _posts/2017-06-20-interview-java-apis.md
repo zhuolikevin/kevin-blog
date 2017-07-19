@@ -189,6 +189,14 @@ int n = deque.peekFirst();
 int n = deque.peekLast();
     ```
 
+1. `Random`
+
+    ```java
+Random rand = new Random();
+// 0 <= i < n;
+int i = rand.nextInt(n);
+    ```
+
 1. Conversions
 
     - `Character` to `Integer`: `Character.getNumericValue(char)`
