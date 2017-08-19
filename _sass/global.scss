@@ -32,15 +32,20 @@ pre {
   }
 }
 table {
+  border: 1px solid #c1c1c1;
   border-collapse: collapse;
-  thead { border-bottom: 2px solid #c1c1c1; }
   tr {
     border-bottom: 1px solid #ddd;
-    &:last-child { border-bottom: none; }
+    &:nth-child(2n+1) { background: #eeeeee; }
+  }
+  thead {
+    border-bottom: 2px solid #c1c1c1;
+    tr { background: transparent !important; }
   }
   th, td {
     padding: 5px 10px;
     vertical-align: initial;
+    border: 1px solid #c1c1c1;
   }
 }
 #source-description a { text-decoration: none !important; }
