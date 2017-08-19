@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Interview CS Fundamentals"
+title: "Interview CS Fundamentals Notes"
 date: 2017-07-24 14:10:00 -0600
 permalink: /:categories/:year/:month/:day/:title/
 tags: English Techs Note Interview
-excerpt:  Basic knowledge-base for computer science, especially for technical interviews.
+excerpt:  Basic knowledge-base for computer science, especially for technical interviews
 ---
 
 > Basic knowledge-base for computer science, especially for technical interviews.
@@ -140,4 +140,4 @@ excerpt:  Basic knowledge-base for computer science, especially for technical in
 
 ### Resources
 
-[Hangouts]({{ site.baseurl }}/assets/docs/CSFundamentals.pdf)
+- [Hangouts]({{ site.baseurl }}/assets/docs/CSFundamentals.pdf)
